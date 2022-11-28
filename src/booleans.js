@@ -7,7 +7,9 @@ function negate(a) {
 };
 
 function both(a, b) {
-  // your code here
+if (a === true &&  b === true) {
+  return true;
+} return false;
 };
 
 function either(a, b) {
