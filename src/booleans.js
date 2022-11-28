@@ -18,7 +18,9 @@ function either(a, b) {
 };
 
 function none(a, b) {
-  // your code here
+  if (a === false && b === false) {
+    return true;
+  } return false;
 };
 
 function one(a, b) {
