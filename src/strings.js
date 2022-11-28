@@ -19,7 +19,11 @@ function firstCharacter (string) {
 };
 
 function firstCharacters (string, n) {
-  // your code here
+  let newString = "";
+  for (let i = 0; i < n; i++) {
+    newString += string[i];
+  } 
+  return newString;
 };
 
 module.exports = {
