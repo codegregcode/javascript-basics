@@ -1,9 +1,8 @@
 function negate(a) {
   if (a === false) {
     return true;
-  } 
+  }
   return false;
-  
 };
 
 function both(a, b) {
@@ -13,7 +12,9 @@ if (a === true &&  b === true) {
 };
 
 function either(a, b) {
-  // your code here
+  if (a === true || b === true) {
+    return true;
+  } return false;
 };
 
 function none(a, b) {
