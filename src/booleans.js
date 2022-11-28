@@ -48,7 +48,10 @@ function isEqual(a, b) {
 }
 
 function isGreaterThan(a, b) {
-  // your code here
+  if (a > b) {
+    return true;
+  }
+  return false;
 }
 
 function isLessThanOrEqualTo(a, b) {
