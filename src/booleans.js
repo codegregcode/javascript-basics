@@ -55,7 +55,10 @@ function isGreaterThan(a, b) {
 }
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
+  if (a <= b) {
+    return true;
+  }
+  return false;
 }
 
 function isOdd(a) {
