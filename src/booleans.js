@@ -1,5 +1,9 @@
 function negate(a) {
-  // your code here
+  if (a === false) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function both(a, b) {
