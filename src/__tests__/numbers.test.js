@@ -49,7 +49,7 @@ describe('divide', () => {
 });
 
 describe('power', () => {
-  xit('returns the first number to the power of the second', () => {
+  it('returns the first number to the power of the second', () => {
     expect(power(5, 2)).toEqual(25);
     expect(power(2, 3)).toEqual(8);
     expect(power(10, 5)).toEqual(100000);
@@ -57,7 +57,7 @@ describe('power', () => {
 });
 
 describe('round', () => {
-  xit('rounds the number to the nearest integer', () => {
+  it('rounds the number to the nearest integer', () => {
     expect(round(2.1)).toEqual(2);
     expect(round(9.7)).toEqual(10);
     expect(round(5.5)).toEqual(6);
