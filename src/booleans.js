@@ -62,7 +62,10 @@ function isLessThanOrEqualTo(a, b) {
 }
 
 function isOdd(a) {
-  // your code here
+  if (a % 2 !== 0) {
+    return true;
+  }
+  return false;
 }
 
 function isEven(a) {
