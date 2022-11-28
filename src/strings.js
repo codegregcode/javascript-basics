@@ -1,18 +1,18 @@
 function sayHello (string) {
-  // your code here
+  return `Hello, ${string}!`;
 };
 
 function uppercase (string) {
-  // your code here
+  return string.toUpperCase();
 };
 
 function lowercase (string) {
-  // your code here
+  return string.toLowerCase();
 };
 
 function countCharacters (string) {
-  // your code here
-};
+  return string.length;
+  };
 
 function firstCharacter (string) {
   // your code here
