@@ -15,7 +15,9 @@ const addToArray = (element, array) => {
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  const newArr = array.slice();
+  newArr.push(element);
+  return newArr;
 };
 
 const removeNthElement = (index, array) => {
