@@ -30,7 +30,7 @@ const getAges = people => {
 };
 
 const findByName = (name, people) => {
-  // your code here
+  return people.find(people => people.name === name);
 };
 
 const findHondas = cars => {
