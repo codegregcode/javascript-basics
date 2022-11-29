@@ -34,11 +34,17 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
-  return strings.map(strings => strings.split('').reverse().join(''));
+  return strings.map(strings =>
+    strings
+      .split('')
+      .reverse()
+      .join('')
+  );
 };
 
 const onlyEven = numbers => {
-  // your code here
+  const newArr = numbers.filter(numbers => numbers % 2 === 0);
+  return newArr;
 };
 
 const removeNthElement2 = (index, array) => {
