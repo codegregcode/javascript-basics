@@ -48,7 +48,9 @@ const onlyEven = numbers => {
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArr =[...array];
+  newArr.splice(index, 1);
+  return newArr;
 };
 
 const elementsStartingWithAVowel = strings => {
