@@ -90,6 +90,7 @@ function startsWith(char, string) {
 }
 
 function containsVowels(string) {
+  // return string === string.match(/[aeiou]/gi);
   if (string.match(/[aeiou]/gi)) {
     return true;
   }
@@ -97,10 +98,11 @@ function containsVowels(string) {
 }
 
 function isLowerCase(string) {
-  if (string === string.toLowerCase()) {
-    return true;
-  }
-  return false;
+  return string === string.toLowerCase();
+  // if (string === string.toLowerCase()) {
+  //   return true;
+  // }
+  // return false;
 }
 
 module.exports = {
