@@ -1,36 +1,21 @@
 function negate(a) {
-  if (a === false) {
-    return true;
-  }
-  return false;
+  return !a;
 }
 
 function both(a, b) {
-  if (a === true && b === true) {
-    return true;
-  }
-  return false;
+  return a && b;
 }
 
 function either(a, b) {
-  if (a === true || b === true) {
-    return true;
-  }
-  return false;
+  return a || b;
 }
 
 function none(a, b) {
-  if (a === false && b === false) {
-    return true;
-  }
-  return false;
+  return !a && !b;
 }
 
 function one(a, b) {
-  if ((a === true && b === false) || (a === false && b === true)) {
-    return true;
-  }
-  return false;
+  return (a && !b) || (!a && b);
 }
 
 function truthiness(a) {
@@ -41,68 +26,39 @@ function truthiness(a) {
 }
 
 function isEqual(a, b) {
-  if (a === b) {
-    return true;
-  }
-  return false;
+  return a === b;
 }
 
 function isGreaterThan(a, b) {
-  if (a > b) {
-    return true;
-  }
-  return false;
+  return a > b;
 }
 
 function isLessThanOrEqualTo(a, b) {
-  if (a <= b) {
-    return true;
-  }
-  return false;
+  return a <= b;
 }
 
 function isOdd(a) {
-  if (a % 2 !== 0) {
-    return true;
-  }
-  return false;
+  return a % 2 !== 0;
 }
 
 function isEven(a) {
-  if (a % 2 === 0) {
-    return true;
-  }
-  return false;
+  return a % 2 === 0;
 }
 
 function isSquare(a) {
-  if (a >= 0 && Math.sqrt(a) % 1 === 0) {
-    return true;
-  }
-  return false;
+  return a >= 0 && Math.sqrt(a) % 1 === 0;
 }
 
 function startsWith(char, string) {
-  if (string.startsWith(char)) {
-    return true;
-  }
-  return false;
+  return string.startsWith(char);
 }
 
 function containsVowels(string) {
-  // return string === string.match(/[aeiou]/gi);
-  if (string.match(/[aeiou]/gi)) {
-    return true;
-  }
-  return false
+  return !!string.match(/[aeiou]/i);
 }
 
 function isLowerCase(string) {
   return string === string.toLowerCase();
-  // if (string === string.toLowerCase()) {
-  //   return true;
-  // }
-  // return false;
 }
 
 module.exports = {

@@ -44,7 +44,6 @@ const reverseWordsInArray = strings => {
 
 const onlyEven = numbers => {
   return numbers.filter(numbers => numbers % 2 === 0);
-  
 };
 
 const removeNthElement2 = (index, array) => {

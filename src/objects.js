@@ -1,5 +1,5 @@
 const createPerson = (name, age) => {
-  return { name: name, age: age };
+  return { name, age };
 };
 
 const getName = object => {
@@ -15,10 +15,7 @@ const hasProperty = (property, object) => {
 };
 
 const isOver65 = person => {
-  if (person.age > 65) {
-    return true;
-  }
-  return false;
+  return person.age > 65;
 };
 
 const getAges = people => {
@@ -43,8 +40,8 @@ const averageAge = people => {
 
 const createTalkingPerson = (name, age) => {
   return {
-    name: name,
-    age: age,
+    name,
+    age,
     introduce: introduce => {
       return `Hi ${introduce}, my name is ${name} and I am ${age}!`;
   }
